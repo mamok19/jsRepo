@@ -1,4 +1,5 @@
 function digitSum(num) {
+    num= 123
     let sum =0
     while (num > 1)
     {
