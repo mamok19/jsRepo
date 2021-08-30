@@ -5,13 +5,13 @@ function studets_grades()
     let median;
     let organized_Grades = grades.sort();
     if (grades.length()%2 === 1){
-    //     median = organized_Grades[((organized_Grades.length())/2)+0.5];
-    //     half_range = organized_Grades[((organized_Grades.length())/2)+0.5] - organized_Grades[organized_Grades.length()-1];
+        median = organized_Grades[((organized_Grades.length())/2)+0.5];
+        half_range = organized_Grades[((organized_Grades.length())/2)+0.5] - organized_Grades[organized_Grades.length()-1];
      }
     else {
-        // median = organized_Grades[(grades.length())/2];
-        // half_range = organized_Grades[((organized_Grades.length())/2)] - organized_Grades[organized_Grades.length()-1];
+        median = organized_Grades[(grades.length())/2];
+        half_range = organized_Grades[((organized_Grades.length())/2)] - organized_Grades[organized_Grades.length()-1];
     }
-    // console.log("stats: \n","    Range: ", (organized_Grades[0]- organized_Grades[organized_Grades.length()-1]),"\n","    Median: ",median, "\n", "    Half Range: ", half_range);
+    console.log("stats: \n","    Range: ", (organized_Grades[0]- organized_Grades[organized_Grades.length()-1]),"\n","    Median: ",median, "\n", "    Half Range: ", half_range);
 }
 studets_grades();
