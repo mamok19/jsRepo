@@ -1,34 +1,28 @@
-let jerusalem; tel_Aviv; acre; katzrin; zikim; musmus; 
-const citys = [
-     jerusalem = {capital: true, coastal: false, famous: true, ancient: true},
-     tel_Aviv = {capital: false, coastal: true, famous: true, ancient: coastal},
-     acre = {capital: false, coastal: true, famous: false, ancient: true},
-
-
-]
 function guessCity(capital, coastal, famous, ancient) {
     if (capital && ancient && famous)
     {
-        return "Jerusalem"
+        return "Jerusalem";
     }
     if (coastal && famous)
     {
-        return "Tel Aviv"
+        return "Tel Aviv";
     }
     if (coastal && ancient)
     {
-        return "Acre"
+        return "Acre";
     }
     if (ancient)
     {
-        return "Katzrin"
+        return "Katzrin";
     }
     if (coastal)
     {
-        return "Zikim"
+        return "Zikim";
     }
-    if (! (capital && coastal && ancient && famous))
+    if ((!capital && !coastal && !ancient && !famous))
     {
-        return "Musmus"
+        return "Musmus";
     }
+    return "none of the above";
 }
+console.log(guessCity(false, false, true, false));
